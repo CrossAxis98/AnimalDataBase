@@ -13,7 +13,16 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CustomTextField(modifier: Modifier, text: String, label: String, onTextChange: (String) -> Unit, imeAction: ImeAction, keyboardActions: KeyboardActions, iconId: Int, iconModifier: Modifier) {
+fun CustomTextField(
+    modifier: Modifier,
+    text: String,
+    label: String,
+    onTextChange: (String) -> Unit,
+    imeAction: ImeAction,
+    keyboardActions: KeyboardActions,
+    iconId: Int,
+    iconModifier: Modifier
+) {
     TextField(
         modifier = modifier.padding(6.dp) ,
         value = text,
